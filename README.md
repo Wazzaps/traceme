@@ -2,12 +2,14 @@
 
 > [!WARNING]
 > This is a proof-of-concept that contains hacky code and hardcoded constants.
+>
 > Do not expect things to work without tinkering.
+>
 > Do not run in production without ensuring it's secure.
 
 ## What
 
-A small reverse proxy that spawns a separate instance of your (Go[^1]) web app per client (by source IP), and runs it under the [rr[^2]](https://rr-project.org/) time-travel debugger.
+A small reverse proxy that spawns a separate instance of your (Go[^1]) web app per client (by source IP), and runs it under the [rr](https://rr-project.org/)[^2] time-travel debugger.
 
 It also includes a "trace browser" that launches a preconfigured in-browser vscode that's ready to debug the selected trace.
 
